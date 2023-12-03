@@ -85,7 +85,7 @@ function selectLanguage(lang) {
 }
 
 function updateLabels(lang) {
-  $('#clear').html(jQuery.i18n.prop('button.reset'));
+  $('#clear').attr('title', jQuery.i18n.prop('button.reset'));
   $('#lbl_ch_items').html(jQuery.i18n.prop('label.cursed-hoard.items'));
   $('#lbl_ch_suits').html(jQuery.i18n.prop('label.cursed-hoard.suits'));
   $('#sound-label').html(jQuery.i18n.prop('button.sound'));

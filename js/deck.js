@@ -118,7 +118,7 @@ var base = {
     blanks: function (card, hand) {
       return (card.suit === 'army' && !isArmyClearedFromPenalty(this, hand)) ||
         (card.suit === 'land' && card.name !== 'Mountain') ||
-        (card.suit === 'flame' && card.name !== 'Lightning') || isPhoenix(card);
+        (card.suit === 'flame' && card.name !== 'Lightning') || card.id === PHOENIX_PROMO;
     },
     relatedSuits: ['army', 'land', 'flame'],
     relatedCards: ['Mountain', 'Lightning']
